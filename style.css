@@ -1,0 +1,144 @@
+/* BASE */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* VARIABLES */
+:root{
+
+    --main-lavender: #DCD0FE;
+    --main-lavender-dark: #A282FB;
+    --main-lavender-light: #D9CDFA;
+
+    --font-color: #4F407A;
+    --font-color-light: #ADA3C7;
+
+    cursor: url("img/cursorpatita.png"), auto;
+}
+
+/* HTML COSAS */
+body{
+    width: 100%;
+    height: 100%;
+    background: url("img/shushuFondo3.gif");
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+
+
+/* TEXT CONTAINER */
+
+.text-container{
+    width: 80%;
+    height: 100%;
+    background-color: rgba(220, 208, 254, 0.7);
+    text-align: center;
+    margin: 10%;
+    border-radius: 20px;
+    padding: 5% 0;
+}
+
+.text-container img{
+    width: 40%;
+}
+
+.text-container > *{
+    margin: 3% 0;
+}
+
+.text-container img{
+    border-radius: 20px;
+}
+.title{
+    margin-bottom: 5%;
+    font-size: 4rem;
+}
+
+.heart-gif:hover{
+    transition: all 1s;
+    animation: girar 1s infinite;
+
+}
+
+@keyframes girar {
+    from{
+        transform: rotateY(0);
+    }
+
+    to{
+        transform: rotateY(180deg);
+    }
+    
+}
+.video-player{
+}
+
+.tweet-container{
+    width: 80%;
+    margin: 5% 25%;
+}
+
+.tweet-container blockquote{
+    display: inline-block;
+}
+
+.musicPlayer{
+    width: 100%;
+    background-color: var(--main-lavender-dark);
+    display: none;
+}
+
+.musicPlayer-active{
+    display: block;
+}
+
+
+
+
+/* SLIDESHOW */
+
+/* Slideshow container */
+.slideshow-container {
+  width: 80%;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+
+  border-radius: 20px;
+  border: 5px solid var(--main-lavender-dark);
+  box-shadow: 0 0 20px rgba(var(--main-lavender-dark), 0.6);
+}
+
+.slideshow-container img{
+    height: 500px;
+    object-fit: cover;
+}
+
+
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
